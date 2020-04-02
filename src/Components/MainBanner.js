@@ -1,5 +1,6 @@
 import React from "react";
 import { BannerBlock } from "./MainBanner_Block";
+import { MianInformation } from "./MianInformation"
 import Earn from "../../src/img/table-banner/01.Earn.png";
 import Ride from "../../src/img/table-banner/02.Ride.png";
 import Eat from "../../src/img/table-banner/03.Eat.png";
@@ -27,8 +28,7 @@ export const Banner = props => {
           <BannerBlock address={Fly}/>
       </section>
 
-      <section className="table-display">
-      </section>
+      <MianInformation/>
 
     </div>
   );
