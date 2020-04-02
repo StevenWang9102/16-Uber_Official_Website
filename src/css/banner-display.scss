@@ -1,0 +1,26 @@
+.table-display{
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+    background-color: yellowgreen;
+}
+
+@media only screen and (min-width: $medium-screen) {
+    .table-display{
+        top:300px
+    }
+}
+
+@media only screen and (max-width: $medium-screen) {
+    .table-display{
+        top:300px;
+    }
+}
+
+@media only screen and (max-width: $small-screen) {
+    .table-display{
+        top:160px;
+    }
+}
