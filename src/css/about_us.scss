@@ -1,0 +1,60 @@
+@import "./general.scss";
+
+#about-us {
+  padding: 50px 20px 20px 20px;
+  position: relative;
+  height: 400px;
+  background-color: rgba(133, 224, 145, 0.13);
+}
+
+#about-us .container {
+  max-width: $large-screen;
+}
+
+#about-us-block {
+  padding-top: 40px;
+}
+#about-us-block img {
+  padding-bottom: 20px;
+}
+
+#about-us-block .learn-more {
+  &::after {
+    @extend .articleUnderline;
+    border: 0.7px solid rgba(0, 0, 0, 0.219);
+    width: 77px;
+  }
+  &:hover {
+    &::after {
+      @extend .articleUnderline;
+      border: 0.7px solid rgb(0, 0, 0);
+      width: 77px;
+    }
+  }
+}
+@media only screen and (min-width: $medium-screen) {
+}
+
+@media only screen and (max-width: $medium-screen) {
+  #about-us {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: $small-screen) {
+  #about-us {
+    height: 600px;
+  }
+  #about-us .container {
+    max-width: 600px;
+  }
+}
+
+@media only screen and (max-width: $extra-small-screen) {
+  #about-us {
+    height: 820px;
+  }
+  .container {
+    max-width: 820px;
+  }
+}

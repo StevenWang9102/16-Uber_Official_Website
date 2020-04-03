@@ -1,6 +1,6 @@
 import React from "react";
-import { BannerBlock } from "./MainBanner_Block";
-import { MianInformation } from "./MianInformation"
+import { BannerBlock } from "../Components/Banner_Block";
+import { Information } from "../Components/Information"
 import Earn from "../../src/img/table-banner/01.Earn.png";
 import Ride from "../../src/img/table-banner/02.Ride.png";
 import Eat from "../../src/img/table-banner/03.Eat.png";
@@ -16,19 +16,19 @@ export const Banner = props => {
   // const myArray =[Earn,Ride,Eat,Freight,Business,Transit,Bike,Fly]
   return (
     <div id='banner'>
-      <img src={BackGround} className="banner-bg" alt="bg"/>
+      <img src={BackGround} className="banner-background" alt="bg"/>
       <section className="table-nav">
-          <BannerBlock address={Earn}/>
-          <BannerBlock address={Ride}/>
-          <BannerBlock address={Eat}/>
-          <BannerBlock address={Freight}/>
-          <BannerBlock address={Business}/>
-          <BannerBlock address={Transit}/>
-          <BannerBlock address={Bike}/>
-          <BannerBlock address={Fly}/>
+          <BannerBlock src={Earn}/>
+          <BannerBlock src={Ride}/>
+          <BannerBlock src={Eat}/>
+          <BannerBlock src={Freight}/>
+          <BannerBlock src={Business}/>
+          <BannerBlock src={Transit}/>
+          <BannerBlock src={Bike}/>
+          <BannerBlock src={Fly}/>
       </section>
 
-      <MianInformation/>
+      <Information/>
 
     </div>
   );

@@ -1,0 +1,69 @@
+@import "./general.scss";
+
+#motion {
+  position: relative;
+  height: 600px;
+//   border: 2px solid chocolate;
+  background-color: #f6f6f6;
+}
+
+#motion h1 {
+  font-size: 50px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+#motion .container {
+  margin: 0;
+//   background-color: cadetblue;
+}
+
+#motion img {
+  position: absolute;
+  bottom: 0;
+//   border: 3px solid cadetblue;
+  margin-bottom: 0;
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.view-all-city {
+  height: 40px;
+  margin-left: 20px;
+
+  &::after {
+    @extend .articleUnderline;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    width: 92px;
+  }
+  &:hover {
+    &::after {
+      @extend .articleUnderline;
+      border: 1px solid rgb(0, 0, 0);
+      width: 92px;
+    }
+  }
+}
+
+.test {
+  width: 100%;
+}
+
+@media only screen and (min-width: $medium-screen) {
+  #motion img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: $medium-screen) {
+    #motion img {
+        height: 70%;
+        width: 100%;
+      }
+}
+
+@media only screen and (max-width: $small-screen) {
+}

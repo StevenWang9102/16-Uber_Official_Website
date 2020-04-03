@@ -1,6 +1,6 @@
 import React from "react";
 
-export const MianInformation = props => {
+export const Information = props => {
   // const myArray =[Earn,Ride,Eat,Freight,Business,Transit,Bike,Fly]
   return (
     <section className='table-display'>

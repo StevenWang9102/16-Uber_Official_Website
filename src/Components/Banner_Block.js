@@ -4,7 +4,7 @@ export const BannerBlock = props => {
     
   return (
     <div className="banner_block">
-        <img src={props.address}  alt="404"/>
+        <img src={props.src} alt="404"/>
     </div>
   )
 };
