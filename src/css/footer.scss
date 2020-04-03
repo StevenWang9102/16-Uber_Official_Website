@@ -1,0 +1,40 @@
+@import "./general.scss";
+
+#footer {
+    color: white;
+    position: relative;
+    top: -15px;
+    height: 100px;
+    background-color: black;
+}
+
+#footer hr{
+    width: 90%;
+    border: .7px solid rgba(161, 161, 161, 0.575);
+}
+
+#footer .container{
+    padding: 0;
+    margin-left: 5%;
+}
+
+@media only screen and (min-width: $medium-screen) {
+}
+
+@media only screen and (max-width: $medium-screen) {
+    #footer {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: $small-screen) {
+    #footer {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: $extra-small-screen) {
+    #footer {
+        height: 200px;
+    }
+}

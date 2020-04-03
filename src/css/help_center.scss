@@ -1,0 +1,42 @@
+@import "./general.scss";
+
+
+#help {
+  padding: 30px 10px 30px 10px;
+  color: white;
+  background-color: black;
+  z-index: -1;
+  // border: 12px solid rgba(255, 255, 0, 0.144);
+}
+
+#help section{
+  padding-top: 20px;
+}
+
+#help ul{
+  // border: 1px solid grey;
+  padding: 5px;
+}
+#help li{
+  // border: 1px solid yellow;
+  line-height: 28px;
+}
+#help img{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: $medium-screen) {
+}
+
+@media only screen and (max-width: $medium-screen) {
+
+}
+
+@media only screen and (max-width: $small-screen) {
+
+}
+
+@media only screen and (max-width: $extra-small-screen) {
+
+}

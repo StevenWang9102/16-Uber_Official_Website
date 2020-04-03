@@ -2,7 +2,7 @@
 
 #banner{
     height: 700px;
-    background-color: rgba(255, 235, 205, 0.39);
+    background-color: white;
 }
 
 .banner-background{
@@ -12,35 +12,51 @@
     z-index: -1;
 }
 
-.table-nav{
+.banner-table-container{
+    overflow:hidden;
     display: flex;
     flex-wrap: nowrap;
     position: absolute;
     top: 80px;
     left: 0;
     width: 100%;
-    // background-color: rgb(247, 225, 225);
-}
-
-.table-nav > div{
-    width: 120px;
-    height: 130px;
-    object-fit:cover;
-    border: 1px solid black;
+    border: 2px solid white;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.103) ;
+    z-index: 2;
     background-color: white;
 }
 
 
-.banner_block img{
+#banner .banner_unit{
+    width: 120px;
+    height: 130px;
+    object-fit:cover;
+    background-color: white;
     position: relative;
+    z-index: 10;
+}
+
+#banner .banner_unit .title{
+    position: relative;
+    font-weight: 600;
+    top: 44px;
     left: 50%;
-    width:100px;
-    height:110px;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#banner .banner_unit img{
+    position: relative;
+    top: 18px;
+    left: 50%;
+    width:24px;
+    height: auto;
+    // border: 1px solid green;
     transform: translateX(-50%);
 }
 
 @media only screen and (min-width: $medium-screen) {
-    .table-nav{
+    .banner-table-container{
         position: absolute;
         top: 110px;
         left: 10%;
@@ -49,26 +65,33 @@
 }
 
 @media only screen and (max-width: $medium-screen) {
-    .table-nav > div{
+    .banner-table-container > div{
         width: 18%;
         height: 110px;
-        // background-color: yellowgreen;
     }
-    .table-nav{
+    .banner-table-container{
         position: absolute;
-        top: 52px;
+        top: 60px;
         left: 0;
-        width: 80%;
+        width: 100%;
     }
-    .banner_block img{
-        width:120px;
+    .banner_unit img{
+        width:20px;
     }
 }
 
 @media only screen and (max-width: $small-screen) {
-    // when screen < 748px
-    .banner_block img{
-        width:90px;
+    #banner .banner_unit{
+        min-width: 90px;
+    }    
+    .banner_unit img{
+        width:20px;
         height:100px;
     }
+  }
+
+  @media only screen and (max-width: $extra-small-screen ) {
+    #banner .banner_unit{
+        min-width: 90px;
+    }    
   }
