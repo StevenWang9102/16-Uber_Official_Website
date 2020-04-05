@@ -1,8 +1,11 @@
 import React from "react";
 import apple from "../img/footer/apple-store.svg";
 import google from "../img/footer/google-pay.svg";
+import question from "../img/footer/question.jpg";
+import english from "../img/footer/earth3.jpg";
+import position from "../img/footer/position.jpg";
 
-export const HelpCenter = props => {
+export const HelpCenter = (props) => {
   return (
     <div id='help'>
       <div className='container'>
@@ -10,12 +13,21 @@ export const HelpCenter = props => {
           <section className='col-sm-9 col-md-6 col-lg-6 order-md-1 order-lg-1'>
             <h1>Uber</h1>
             <ul>
-              <li>Help Center</li>
-              <li>English(International)</li>
-              <li>Auckland</li>
+              <li>
+                <img className="small-img" src={question} alt='1' />
+                Help Center
+              </li>
+              <li>
+                <img className="small-img" src={english} alt='' />
+                English(International)
+              </li>
+              <li>
+                <img className="small-img" src={position} alt='' />
+                Auckland
+              </li>
             </ul>
-            <img src={apple} alt='apple' />
-            <img src={google} alt='google' />
+            <img className="payment-img" src={apple} alt='apple' />
+            <img className="payment-img" src={google} alt='google' />
           </section>
           <section className='col-sm-9 col-md-6 col-lg-3 order-md-3 order-lg-2'>
             <h4>About us</h4>
@@ -42,8 +54,6 @@ export const HelpCenter = props => {
               <li>Advanced Technologies Group</li>
             </ul>
           </section>
-          {/* <hr/>
-<h1>di</h1> */}
         </div>
       </div>
     </div>

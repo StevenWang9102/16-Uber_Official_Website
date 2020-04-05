@@ -1,11 +1,12 @@
 @import "./general.scss";
 
-
 #help {
+  position: relative;
+  height: 600px;
   padding: 30px 10px 30px 10px;
   color: white;
-  background-color: black;
-  z-index: -1;
+  background-color: rgb(0, 0, 0);
+  // z-index: 0;
   // border: 12px solid rgba(255, 255, 0, 0.144);
 }
 
@@ -14,27 +15,46 @@
 }
 
 #help ul{
-  // border: 1px solid grey;
+  // border: 1px solid salmon;
   padding: 5px;
 }
+
 #help li{
-  // border: 1px solid yellow;
   line-height: 28px;
 }
+
+#help .small-img{
+  margin: 0 7px 0 0;
+  height: 25px;
+  width: auto;
+  object-fit: cover;
+}
+#help .payment-img{
+  margin: 20px 30px 20px 0px;
+}
+
 #help img{
+  cursor: pointer;
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
 @media only screen and (min-width: $medium-screen) {
+  #help{
+    height: 500px;
+  }
 }
 
 @media only screen and (max-width: $medium-screen) {
-
+  #help{
+    height: 700px;
+  }
 }
 
 @media only screen and (max-width: $small-screen) {
-
+  #help{
+    height: 1000px;
+  }
 }
 
 @media only screen and (max-width: $extra-small-screen) {
