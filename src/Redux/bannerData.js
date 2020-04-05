@@ -67,3 +67,14 @@ export const renderTitle = [
     "Bike",
     "Fly"
   ];
+
+  export const renderChecked = [
+    {"Earn": false},
+    {"Ride": false},
+    {"Eat": false},
+    {"Freight": false},
+    {"Business": false},
+    {"Transit": false},
+    {"Bike": false},
+    {"Fly": false},
+];

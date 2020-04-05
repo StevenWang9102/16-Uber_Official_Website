@@ -36,10 +36,15 @@
     position: relative;
     z-index: 10;
     // border: 1px solid green;
-
 }
 
-#banner .banner_unit .title{
+#banner .banner_unit_pro{
+    width: 120px;
+    z-index: 20;
+    border-bottom: 5px solid rgb(0, 0, 0);
+}
+
+#banner .banner_unit .title, #banner .banner_unit_pro .title{
     position: relative;
     font-weight: 600;
     top: 50px;
@@ -48,7 +53,7 @@
     text-align: center;
 }
 
-#banner .banner_unit img{
+#banner .banner_unit img, #banner .banner_unit_pro img{
     position: relative;
     top: 34px;
     left: 50%;
@@ -58,10 +63,7 @@
     transform: translateX(-50%);
 }
 
-#banner .banner_unit_pro{
-    z-index: 20;
-    border-bottom: 11px solid rgb(0, 0, 0);
-}
+
 
 @media only screen and (min-width: $medium-screen) {
     .banner-table-container{

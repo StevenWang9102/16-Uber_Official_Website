@@ -11,26 +11,22 @@ import Transit from "../../src/img/table-banner/06.Transit.svg";
 import Bike from "../../src/img/table-banner/07.Bike2.svg";
 import Fly from "../../src/img/table-banner/08.Fly.svg";
 import BackGround from "../../src/img/table-banner/BackGround.png";
-import { bannerData, renderTitle} from "../Redux/bannerData"
+import {renderTitle} from "../Redux/bannerData"
 
 export const Banner = props => {
-  // 抓住目前的index
-  // 抓住目前的tagname
-  // 根据index, 切换显示内容
-  const [currentIndex, setCurrentIndex] = useState(-1);
-  const [currentTagName, setCurrentTagName] = useState("");
-  const renderArray = [Earn, Ride, Eat, Freight, Business, Transit, Bike, Fly];
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const imageArray = [Earn, Ride, Eat, Freight, Business, Transit, Bike, Fly];
   return (
     <div id='banner'>
       <img src={BackGround} className='banner-background' alt='bg' />
       <section className='banner-table-container'>
-        {renderArray.map((element, index) => {
+        {imageArray.map((element, index) => {
           return (
             <BannerBlock
               src={element}
               index={index}
-              currentIndex = {currentIndex}
-              setCurrentTagName={(index)=>setCurrentTagName(index)}
+              checked = {currentIndex===index? true : false}
+              // currentIndex={currentIndex}
               setCurrentIndex={(index)=>setCurrentIndex(index)}
               title={renderTitle[index]}
             />
@@ -38,10 +34,9 @@ export const Banner = props => {
         })}
       </section>
 
+
       <Information
         currentIndex={currentIndex}
-        tagName = {renderTitle[currentIndex]}
-        // content = {bannerData.currentTagName}
       />
     </div>
   );
