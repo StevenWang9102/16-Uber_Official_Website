@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-// import { connect } from "react-redux";
 import { BannerBlock } from "../Components/Banner_Block";
 import { Information } from "../Components/Information";
 import Earn from "../../src/img/table-banner/01.Earn.svg";
@@ -15,26 +14,12 @@ import BackGround from "../../src/img/table-banner/BackGround.png";
 import { bannerData, renderTitle} from "../Redux/bannerData"
 
 export const Banner = props => {
+  // 抓住目前的index
+  // 抓住目前的tagname
+  // 根据index, 切换显示内容
   const [currentIndex, setCurrentIndex] = useState(-1);
   const [currentTagName, setCurrentTagName] = useState("");
   const renderArray = [Earn, Ride, Eat, Freight, Business, Transit, Bike, Fly];
-
-  console.log(typeof(currentTagName));
-  console.log(bannerData[renderTitle[currentIndex]]);
-
-  // 这个只是序号
-  console.log(currentIndex);
-  // 这个是目前的title字符串
-  console.log(renderTitle[currentIndex]);
-
-  console.log(renderTitle[currentIndex] && renderTitle[currentIndex].checked);
-  // 这个是携带的相关信息
-  // 改变对应的check状态
-  // renderTitle[currentIndex].checked = true
-
-  console.log(bannerData[renderTitle[currentIndex]]);
-  // 其中有一个渲染的时候，使用不同的className
-
   return (
     <div id='banner'>
       <img src={BackGround} className='banner-background' alt='bg' />
@@ -46,7 +31,6 @@ export const Banner = props => {
               index={index}
               currentIndex = {currentIndex}
               setCurrentTagName={(index)=>setCurrentTagName(index)}
-              // checked={bannerData[renderTitle[props.index]] && bannerData[renderTitle[props.index]].checked}
               setCurrentIndex={(index)=>setCurrentIndex(index)}
               title={renderTitle[index]}
             />
@@ -54,10 +38,10 @@ export const Banner = props => {
         })}
       </section>
 
-{/* 这个信息携带对应的内容 */}
       <Information
+        currentIndex={currentIndex}
         tagName = {renderTitle[currentIndex]}
-        content = {bannerData.currentTagName}
+        // content = {bannerData.currentTagName}
       />
     </div>
   );

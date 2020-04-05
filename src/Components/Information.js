@@ -1,28 +1,30 @@
 import React from "react";
+import { bannerData } from "../Redux/bannerData"
 
 export const Information = (props) => {
-  console.log(props.content);
-  
+  const renderObject = bannerData[props.currentIndex] || {}
+  const renderContent = Object.values(renderObject)[0]
+
   return (
     <section className='table-display'>
       <h1>
-        {(props.content && props.content.title) ||
-          "Get in the driver's seat and get paid"}{" "}
+        {(renderContent && renderContent.title) ||
+          "Get in the driver's seat and get paid"}
       </h1>
       <p>
-        {(props.content && props.content.paragraph) ||
+        {(renderContent && renderContent.paragraph) ||
           "Drive on the largest network of active riders."}
       </p>
       <button className="pointer">
-        {(props.content && props.content.input1) || "Sign up to drive"}
+        {(renderContent && renderContent.input1) || "Sign up to drive"}
       </button>
       {props.tagName === "Ride" ? (
       <button className="pointer">
-      {(props.content && props.content.input2) || "Sign up to drive"}
+      {(renderContent && renderContent.input2) || "Sign up to drive"}
         </button>
       ) : null}
       <p className='learn-more pointer'>
-        {(props.content && props.content.input2) ||
+        {(renderContent && renderContent.input2) ||
           "Learn more about driving and delivering"}
       </p>
     </section>
