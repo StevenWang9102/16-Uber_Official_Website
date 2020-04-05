@@ -1,47 +1,91 @@
 @import "./general.scss";
 
 #sign-up {
-  height: 220px;
-  padding: 40px 10px 40px 10px;
-  // border: 3px solid blueviolet;
-}
-
-#sign-up .container {
+  position: relative;
+  height: 200px;
   width: 100%;
-  margin-left: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px 0 10px;
+  max-width: 1120px;
+
+  // border: 2px solid salmon;
+  border-top: 3px solid rgba(128, 128, 128, 0.1);
 }
 
-@media (min-width: 768px) {
-  #sign-up .container {
-    max-width: 920px;
-  }
-}
+#sign-up-block h1 {
+  font-size: 32px;
+  position: relative;
+  top: 40px;
+  width: 380px;
+  margin: 20px;
+  min-width: 300px;
+  // border: 2px solid green;
 
-#sign-up-block {
-  padding-left: 30px;
   &::after {
     @extend .articleUnderline;
-    margin: 25px 0;
-    border: 0.7px solid rgba(0, 0, 0, 0.219);
-    width: 277px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    width: 100%;
   }
   &:hover {
     &::after {
       @extend .articleUnderline;
-      border: 0.7px solid rgb(0, 0, 0);
-      margin: 25px 0;
-      width: 277px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgb(0, 0, 0);
+      width: 100%;
     }
-}
-}
-
-#sign-up-block h1:hover{
-  color: blue;
-}
-
-@media only screen and (min-width: $small-screen) {
-  #sign-up {
-    height: 160px;
   }
 }
 
+#sign-up-block h1:hover {
+  color: rgba(128, 128, 128, 0.877);
+}
+
+#sign-up-block h1 span {
+  float: right;
+  margin-right: 10px;
+}
+
+#sign-up-block img{
+  height: 30px;
+}
+
+#sign-up-block img:hover{
+  transition: .4s;
+  transform: translate(15px);
+  // transform: scale(0.5, 0.5);
+}
+
+@media (min-width: 768px) {
+  #sign-up {
+    max-width: 1120px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  
+  #sign-up {
+    margin-left: 30px auto;
+    max-width: 1000px;
+    height: 320px;
+  }
+
+  #sign-up-block {
+    flex: 0 0 100%;
+    max-width: 100%;
+    // border: 2px solid salmon;
+  }
+  #sign-up-block h1{
+    width: 90%;
+    // border: 2px solid salmon;
+  }
+}
+
+@media only screen and (max-width: $small-screen) {
+  // #sign-up {
+  //   margin-left: 30px auto;
+  //   max-width: 1000px;
+  //   height: 320px;
+  // }
+}

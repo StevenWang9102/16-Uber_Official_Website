@@ -7,8 +7,7 @@ import { AboutUsBlock } from "../Components/AboutUsBlock";
 
 export const AboutUs = props => {
   return (
-    <div id='about-us'>
-      <div className='container'>
+    <div id='about-us' className='container'>
         <div className='row'>
           <AboutUsBlock
             src={profile}
@@ -27,6 +26,5 @@ export const AboutUs = props => {
           />
         </div>
       </div>
-    </div>
   );
 };

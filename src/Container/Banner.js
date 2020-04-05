@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+// import { connect } from "react-redux";
 import { BannerBlock } from "../Components/Banner_Block";
 import { Information } from "../Components/Information";
 import Earn from "../../src/img/table-banner/01.Earn.svg";
@@ -19,7 +20,7 @@ export const Banner = props => {
   const renderArray = [Earn, Ride, Eat, Freight, Business, Transit, Bike, Fly];
 
   console.log(typeof(currentTagName));
-  console.log(bannerData[currentTagName]);
+  console.log(bannerData[renderTitle[currentIndex]]);
 
   // 这个只是序号
   console.log(currentIndex);
@@ -34,9 +35,6 @@ export const Banner = props => {
   console.log(bannerData[renderTitle[currentIndex]]);
   // 其中有一个渲染的时候，使用不同的className
 
-
-  // 现在得到目前点击的标签序号，那么我点击的标签就是renderTitle[index]
-  // 对应的title是？
   return (
     <div id='banner'>
       <img src={BackGround} className='banner-background' alt='bg' />
@@ -48,7 +46,7 @@ export const Banner = props => {
               index={index}
               currentIndex = {currentIndex}
               setCurrentTagName={(index)=>setCurrentTagName(index)}
-              checked={bannerData[renderTitle[props.index]] && bannerData[renderTitle[props.index]].checked}
+              // checked={bannerData[renderTitle[props.index]] && bannerData[renderTitle[props.index]].checked}
               setCurrentIndex={(index)=>setCurrentIndex(index)}
               title={renderTitle[index]}
             />
@@ -64,3 +62,19 @@ export const Banner = props => {
     </div>
   );
 };
+
+
+// const mapStateToProps = () => {
+// };
+
+// const mapDispatchToProps = dispatch => {
+//   return {
+//     // onPostCommentsClicked: (slug, myComment) =>
+//     //   dispatch(onPostCommentsClicked(slug, myComment))
+//   };
+// };
+
+// export const Banner = connect(
+//   mapStateToProps,
+//   mapDispatchToProps
+// )(InternalBanner);

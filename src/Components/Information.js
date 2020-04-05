@@ -1,6 +1,8 @@
 import React from "react";
 
 export const Information = (props) => {
+  console.log(props.content);
+  
   return (
     <section className='table-display'>
       <h1>
@@ -11,15 +13,15 @@ export const Information = (props) => {
         {(props.content && props.content.paragraph) ||
           "Drive on the largest network of active riders."}
       </p>
-      <button>
+      <button className="pointer">
         {(props.content && props.content.input1) || "Sign up to drive"}
       </button>
       {props.tagName === "Ride" ? (
-        <button>
-          {(props.content && props.content.input2) || "Sign up to drive"}
+      <button className="pointer">
+      {(props.content && props.content.input2) || "Sign up to drive"}
         </button>
       ) : null}
-      <p className='learn-more'>
+      <p className='learn-more pointer'>
         {(props.content && props.content.input2) ||
           "Learn more about driving and delivering"}
       </p>

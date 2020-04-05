@@ -1,0 +1,80 @@
+@import "./general.scss";
+
+#commitment {
+  position: relative;
+  max-width: 1200px;
+  height: 400px;
+  background-color: white;
+  border-top: 3px solid rgba(128, 128, 128, 0.100);
+
+}
+
+#commitment h1 {
+  margin: 30px 0 20px 0;
+}
+
+#commitment .row div {
+  padding: 30px;
+}
+
+#commitment img {
+  position: absolute;
+  bottom: 5px;
+  margin-bottom: 0;
+  width: 80%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+#commitment article p:nth-child(1) {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+#commitment .paragraph {
+  &::after {
+    @extend .articleUnderline;
+    border: 0.5px solid rgba(184, 153, 153, 0.219);
+    width: 307px;
+  }
+  &:hover {
+    &::after {
+      @extend .articleUnderline;
+      border: 0.5px solid rgb(0, 0, 0);
+      width: 307px;
+    }
+  }
+}
+
+#commitment article p:nth-child(3) {
+  &::after {
+    width: 153px;
+  }
+  &:hover {
+    &::after {
+      width: 153px;
+    }
+  }
+}
+
+@media only screen and (max-width: $medium-screen) {
+  #commitment {
+    height: 450px;
+  }
+  #commitment img {
+    left: 40px;
+    bottom: 35px;
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: $small-screen) {
+  #commitment {
+    height: 580px;
+  }
+  
+  #commitment .second-column {
+    position: absolute;
+    bottom: 0;
+  }
+}

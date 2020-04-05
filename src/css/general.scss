@@ -4,6 +4,9 @@ $medium-screen : 992px;
 $small-screen : 768px;
 $extra-small-screen : 540px;
 
+
+$background-cream-white:#f6f6f6;
+
 .App{
     position: relative;
     height: 2700px;
@@ -11,6 +14,9 @@ $extra-small-screen : 540px;
     padding: 0;
     border: 0;
     margin: 0;
+    min-width: 300px;
+    overflow:hidden;
+
 }
 
 ul li{
@@ -20,15 +26,13 @@ ul li{
 .articleUnderline{
     content: "";
     display: block;
-    width: 50px;
-    border: .5px solid black;
     margin: 5px 0;
   }
 
 .shared_paragraph{
     &::after {
         @extend .articleUnderline;
-        border: .5px solid rgba(0, 0, 0, 0.219);
+        border: .5px solid rgba(0, 0, 0, 0.096);
         width: 92px;
       }
       &:hover {
@@ -38,4 +42,8 @@ ul li{
           width: 92px;
         }
       }
+}
+
+.pointer{
+  cursor: pointer;
 }

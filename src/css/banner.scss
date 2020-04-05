@@ -89,13 +89,18 @@
 }
 
 @media only screen and (max-width: $small-screen) {
+    #banner{
+        height: 600px;
+        // background-color: white;
+    }
+
     #banner .banner_unit{
         min-width: 90px;
     }    
     .banner_unit img{
         width:20px;
         height:100px;
-    }
+    }   
   }
 
   @media only screen and (max-width: $extra-small-screen ) {

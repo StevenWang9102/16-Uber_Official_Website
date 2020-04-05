@@ -1,15 +1,15 @@
 @import "./general.scss";
 
 #about-us {
-  padding: 50px 20px 20px 20px;
+  padding: 50px 35px 20px 35px;
   position: relative;
-  height: 400px;
-  background-color: rgba(133, 224, 145, 0.13);
+  height: 350px;
+  max-width: $large-screen;
+  border-top: 3px solid rgba(128, 128, 128, 0.100);
+  background-color: #ffffff;
+  // border: 2px solid salmon;
 }
 
-#about-us .container {
-  max-width: $large-screen;
-}
 
 #about-us-block {
   padding-top: 40px;
@@ -33,28 +33,41 @@
   }
 }
 @media only screen and (min-width: $medium-screen) {
+#about-us-block h4{
+  font-size: 26px;
+}
 }
 
 @media only screen and (max-width: $medium-screen) {
   #about-us {
-    height: 400px;
+    height: 560px;
+  }
+
+  #about-us-block h4{
+    font-size: 24px;
   }
 }
 
 @media only screen and (max-width: $small-screen) {
   #about-us {
-    height: 600px;
+    height: 660px;
+    max-width: 680px;
   }
-  #about-us .container {
-    max-width: 600px;
+
+}
+
+@media only screen and (max-width: 574px) {
+    #about-us {
+    height: 750px;
   }
 }
 
-@media only screen and (max-width: $extra-small-screen) {
-  #about-us {
-    height: 820px;
-  }
-  .container {
+// 似乎可以优化
+@media only screen and (max-width: 540px) {
+  #about-us{
+    height: 760px;
     max-width: 820px;
   }
 }
+
+

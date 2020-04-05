@@ -3,8 +3,8 @@
 #motion {
   position: relative;
   height: 600px;
-//   border: 2px solid chocolate;
-  background-color: #f6f6f6;
+  border-top: 3px solid rgba(128, 128, 128, 0.100);
+  background-color: $background-cream-white;
 }
 
 #motion h1 {
@@ -21,7 +21,6 @@
 #motion img {
   position: absolute;
   bottom: 0;
-//   border: 3px solid cadetblue;
   margin-bottom: 0;
   height: 90%;
   width: 100%;
@@ -29,27 +28,25 @@
   z-index: 0;
 }
 
-.view-all-city {
+#motion .view-all-city {
   height: 40px;
   margin-left: 20px;
-
+  // border: 3px solid cadetblue;
+ 
   &::after {
     @extend .articleUnderline;
-    border: 1px solid rgba(0, 0, 0, 0.219);
+    border: .5px solid rgba(0, 0, 0, 0.219);
     width: 92px;
   }
   &:hover {
     &::after {
       @extend .articleUnderline;
-      border: 1px solid rgb(0, 0, 0);
+      border: .5px solid rgb(0, 0, 0);
       width: 92px;
     }
   }
 }
 
-.test {
-  width: 100%;
-}
 
 @media only screen and (min-width: $medium-screen) {
   #motion img {
@@ -59,11 +56,34 @@
 }
 
 @media only screen and (max-width: $medium-screen) {
+  
+#motion {
+  position: relative;
+  height: 520px;
+  // background-color: #f6f6f6;
+}
+  #motion h1 {
+    font-size: 45px;
+  }  
     #motion img {
-        height: 70%;
+        height: 85%;
         width: 100%;
+        // border: 1px solid saddlebrown;
       }
 }
 
 @media only screen and (max-width: $small-screen) {
+  #motion {
+    position: relative;
+    height: 420px;
+    // background-color: #f6f6f6;
+  }
+  #motion h1 {
+    font-size: 40px;
+  }  
+  #motion img {
+    height: 65%;
+    width: 100%;
+    // border: 1px solid saddlebrown;
+  }
 }

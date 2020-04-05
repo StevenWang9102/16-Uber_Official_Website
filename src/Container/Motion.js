@@ -8,9 +8,9 @@ export const Motion = props => {
       <img src={modalities} alt='404'/>
       <div className='container'>
         <div className='row'>
-          <div className='test col-sm-12 col-md-9 col-lg-6'>
+          <div className='test col-sm-12 col-md-10 col-lg-12'>
             <h1>Setting 900+ cities in motion</h1>
-            <p className='view-all-city'>View all cities</p>
+            <p className='view-all-city pointer'>View all cities</p>
           </div>
         </div>
       </div>

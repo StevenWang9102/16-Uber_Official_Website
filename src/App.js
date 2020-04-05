@@ -3,7 +3,7 @@ import "./css/index.scss";
 import { Navigation } from "./Container/Navigation"
 import { Banner } from "./Container/Banner"
 import { Motion } from "./Container/Motion"
-import { Safety } from "./Container/Safety"
+import { Commitment } from "./Container/Commitment"
 import { AboutUs } from "./Container/AboutUs"
 import { SignUp } from "./Container/SignUp"
 import { HelpCenter } from "./Container/HelpCenter"
@@ -15,7 +15,7 @@ function App() {
       <Navigation/>
       <Banner/>
       <Motion/>
-      <Safety/>
+      <Commitment/>
       <AboutUs/>
       <SignUp/>
       <HelpCenter/>
