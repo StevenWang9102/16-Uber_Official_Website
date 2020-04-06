@@ -21,6 +21,7 @@ export const BannerBlock = (props) => {
   ];
   return (
     <div
+    id="banner-block"
       className={props.checked? "banner_unit_pro" : "banner_unit"}
       onClick={() => {
           props.setCurrentIndex(props.index);

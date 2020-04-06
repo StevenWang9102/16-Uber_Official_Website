@@ -1,5 +1,5 @@
 import React from "react";
-import menu from "../img/icons/menu.png";
+import menu from "../img/icons/menu.jpg";
 import { useState } from "react";
 import { NavToggle } from "./NavToggle"
 export const Navigation = (props) => {
@@ -20,7 +20,7 @@ export const Navigation = (props) => {
         aria-controls='navbarNav'
         aria-expanded='false'
         aria-label='Toggle navigation'>
-        <span className='navbar-toggler-icon'></span>
+        <span><img src={menu} alt=''/></span>
       </button>
 
       <div className='collapse navbar-collapse' id='navbarSupportedContent'>

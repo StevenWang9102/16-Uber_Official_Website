@@ -5,6 +5,13 @@
     background-color: white;
 }
 
+#banner-block{
+    margin: 5px;
+    // border: 1px solid red;
+    &:hover{
+        cursor: pointer;
+    }
+}
 .banner-background{
     height: 100%;
     width: 100%;

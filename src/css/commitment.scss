@@ -31,17 +31,15 @@
   margin-bottom: 40px;
 }
 
+
 #commitment .paragraph {
+  @extend .public_article_underline;
   &::after {
-    @extend .articleUnderline;
-    border: 0.5px solid rgba(184, 153, 153, 0.219);
-    width: 307px;
+    width: 306px;
   }
   &:hover {
     &::after {
-      @extend .articleUnderline;
-      border: 0.5px solid rgb(0, 0, 0);
-      width: 307px;
+      width: 306px;
     }
   }
 }

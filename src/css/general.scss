@@ -27,19 +27,18 @@ $background-cream-white:#f6f6f6;
     margin: 5px 0;
   }
 
-.shared_paragraph{
+.public_article_underline{
+  &::after {
+    @extend .articleUnderline;
+    border: .5px solid rgba(0, 0, 0, 0.119);
+    transition: 1.3s;
+  }
+  &:hover {
     &::after {
-        @extend .articleUnderline;
-        border: .5px solid rgba(0, 0, 0, 0.096);
-        width: 92px;
-      }
-      &:hover {
-        &::after {
-          @extend .articleUnderline;
-          border: .5px solid rgb(0, 0, 0);
-          width: 92px;
-        }
-      }
+      @extend .articleUnderline;
+      border: .6px solid rgb(0, 0, 0);
+    }
+  }
 }
 
 .pointer{

@@ -5,11 +5,10 @@
   position: relative;
   height: 350px;
   max-width: $large-screen;
-  border-top: 3px solid rgba(128, 128, 128, 0.100);
+  border-top: 3px solid rgba(128, 128, 128, 0.1);
   background-color: #ffffff;
   // border: 2px solid salmon;
 }
-
 
 #about-us-block {
   padding-top: 40px;
@@ -19,23 +18,20 @@
 }
 
 #about-us-block .learn-more {
+  @extend .public_article_underline;
   &::after {
-    @extend .articleUnderline;
-    border: 0.7px solid rgba(0, 0, 0, 0.219);
-    width: 77px;
+    width: 78px;
   }
   &:hover {
     &::after {
-      @extend .articleUnderline;
-      border: 0.7px solid rgb(0, 0, 0);
-      width: 77px;
+      width: 78px;
     }
   }
 }
 @media only screen and (min-width: $medium-screen) {
-#about-us-block h4{
-  font-size: 26px;
-}
+  #about-us-block h4 {
+    font-size: 26px;
+  }
 }
 
 @media only screen and (max-width: $medium-screen) {
@@ -43,7 +39,7 @@
     height: 560px;
   }
 
-  #about-us-block h4{
+  #about-us-block h4 {
     font-size: 24px;
   }
 }
@@ -53,21 +49,18 @@
     height: 660px;
     max-width: 680px;
   }
-
 }
 
 @media only screen and (max-width: 574px) {
-    #about-us {
+  #about-us {
     height: 750px;
   }
 }
 
 // 似乎可以优化
 @media only screen and (max-width: 540px) {
-  #about-us{
+  #about-us {
     height: 760px;
     max-width: 820px;
   }
 }
-
-
