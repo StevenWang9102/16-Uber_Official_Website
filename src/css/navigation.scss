@@ -1,69 +1,68 @@
-@import './general.scss';
+@import "./general.scss";
 
-#navigation{
-    padding: 10px 10px 10px 20px;    
-    background-color: black;
-    text-align: center;
+#navigation {
+  position: relative;
+  height: 60px;
+  top: 0;
+  padding: 10px 10px 10px 20px;
+  background-color: black;
+  text-align: center;
+  z-index: 10;
+
 }
-#navigation button{
+
+
+#navigation .navbar-brand {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+
+#navigation button {
     float: right;
 }
-#navigation .navbar-brand{
-    font-size: 20px;
-    font-weight: 800;
-}
-#navigation li{
-    font-weight: 600;
-    color: white;
-    width: 90px;
-    // border: 1px solid yellow;
-    &:hover{
-        // color: rgba(189, 189, 189, 0.034);
-        // z-index: 11;
-    }
+
+#navigation li {
+  font-weight: 600;
+  color: white;
+  width: 100px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
-#navigation img{
-    width: 20px;
-    height: 20px;
-    object-fit: cover;
+// #navigation img {
+//   width: 20px;
+//   height: 20px;
+//   object-fit: cover;
+// }
+
+#navigation .login {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  height: 30px;
+  width: 220px;
+  overflow: hidden;
 }
 
-.logging-area{
-    // border: 2px solid red;
-}
-
-#navigation .login{
-    margin:5px;
-    height: 30px;
-    width: 220px;
-    overflow: hidden;
-    z-index: 10;
-    // border: 2px solid red;
-}
-
-#navigation .login li{
+#navigation .login li {
     display: inline;
-    // border: 2px solid blue;
 }
 
-#navigation .login li:nth-child(2){
-    color: black;
-    background-color: white;
+#navigation .login li:nth-child(2) {
+  color: black;
+  background-color: white;
 }
-
-
 
 @media only screen and (max-width: $small-screen) {
-    #navigation .login li{
-        display: inline;
-    }    
-    .logging-area{
-    margin-right: -50%;
-}
+  #navigation .login {
+    right: 70px;
+  }
 }
 
 @media only screen and (max-width: $extra-small-screen) {
-    .logging-area{
-        margin-right: -20%;}
+  #navigation .login {
+    right: 70px;
+  }
 }

@@ -1,0 +1,65 @@
+@import './general.scss';
+
+#nav-toggle{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    z-index: 20;
+}
+
+#nav-toggle nav{
+    height: 66px;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.120);
+}
+
+#nav-toggle nav span{
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+#nav-toggle .first-container,
+#nav-toggle .second-container,
+#nav-toggle .third-container{
+    padding: 20px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+#nav-toggle li{
+    padding: 4px;
+    border: 2px solid white;
+}
+
+#nav-toggle li:hover{
+    border: 2px solid rgba(0, 0, 0, 0.671);
+}
+
+#nav-toggle .first-container img
+{
+    float: right;
+    height: 12px;
+    width: 14px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#nav-toggle .third-container img{
+    float: left;
+    height: 20px;
+    width: 20px;
+    margin-top: 3px;
+    margin-right: 10px; 
+}

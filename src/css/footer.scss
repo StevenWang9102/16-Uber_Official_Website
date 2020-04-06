@@ -1,9 +1,10 @@
 @import "./general.scss";
 
 #footer {
+    position: absolute;
     color: white;
     position: relative;
-    top: -15px;
+    margin-top: -15px;
     height: 100px;
     background-color: black;
 }

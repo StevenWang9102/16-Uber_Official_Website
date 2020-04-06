@@ -11,49 +11,37 @@ import Transit from "../../src/img/table-banner/06.Transit.svg";
 import Bike from "../../src/img/table-banner/07.Bike2.svg";
 import Fly from "../../src/img/table-banner/08.Fly.svg";
 import BackGround from "../../src/img/table-banner/BackGround.png";
-import {renderTitle} from "../Redux/bannerData"
 
-export const Banner = props => {
+import { renderTitle } from "../Redux/bannerData";
+
+export const Banner = (props) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [backgroundSource, setBackgroundSource] = useState(BackGround);
   const imageArray = [Earn, Ride, Eat, Freight, Business, Transit, Bike, Fly];
+  
   return (
     <div id='banner'>
-      <img src={BackGround} className='banner-background' alt='bg' />
+      <img
+        src={backgroundSource}
+        className='banner-background'
+        alt='bg'
+      />
       <section className='banner-table-container'>
         {imageArray.map((element, index) => {
           return (
             <BannerBlock
               src={element}
               index={index}
-              checked = {currentIndex===index? true : false}
-              // currentIndex={currentIndex}
-              setCurrentIndex={(index)=>setCurrentIndex(index)}
+              checked={currentIndex === index ? true : false}
+              setBackgroundSource={(index) => setBackgroundSource(index)}
+              setCurrentIndex={(index) => setCurrentIndex(index)}
               title={renderTitle[index]}
             />
           );
         })}
       </section>
 
-
-      <Information
-        currentIndex={currentIndex}
-      />
+      <Information currentIndex={currentIndex} />
     </div>
   );
 };
-
-
-// const mapStateToProps = () => {
-// };
-
-// const mapDispatchToProps = dispatch => {
-//   return {
-//     // onPostCommentsClicked: (slug, myComment) =>
-//     //   dispatch(onPostCommentsClicked(slug, myComment))
-//   };
-// };
-
-// export const Banner = connect(
-//   mapStateToProps,
-//   mapDispatchToProps
-// )(InternalBanner);
