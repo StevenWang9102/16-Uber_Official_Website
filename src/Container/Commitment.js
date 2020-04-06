@@ -21,7 +21,7 @@ export const Commitment = props => {
           </div>
 
           <div className='second-column col-sm-12 col-md-6 col-lg-6'>
-            <img className='safe-img' src={screen} alt='404'/>
+            <img className='safe-img' src={screen} alt=''/>
           </div>
         </div>
       </div>

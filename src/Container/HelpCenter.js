@@ -14,7 +14,7 @@ export const HelpCenter = (props) => {
             <h1>Uber</h1>
             <ul>
               <li>
-                <img className="small-img" src={question} alt='1' />
+                <img className="small-img" src={question} alt='' />
                 Help Center
               </li>
               <li>
@@ -26,8 +26,8 @@ export const HelpCenter = (props) => {
                 Auckland
               </li>
             </ul>
-            <img className="payment-img" src={apple} alt='apple' />
-            <img className="payment-img" src={google} alt='google' />
+            <img className="payment-img" src={apple} alt='' />
+            <img className="payment-img" src={google} alt='' />
           </section>
           <section className='col-sm-9 col-md-6 col-lg-3 order-md-3 order-lg-2'>
             <h4>About us</h4>

@@ -14,7 +14,7 @@
 #nav-toggle nav{
     height: 66px;
     padding: 20px;
-    background-color: rgba(128, 128, 128, 0.120);
+    background-color: $light-grey;
 }
 
 #nav-toggle nav span{
@@ -44,7 +44,7 @@
 }
 
 #nav-toggle li:hover{
-    border: 2px solid rgba(0, 0, 0, 0.671);
+    border: 2px solid $light-black;
 }
 
 #nav-toggle .first-container img

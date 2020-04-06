@@ -27,7 +27,7 @@ export const BannerBlock = (props) => {
           props.setCurrentIndex(props.index);
           props.setBackgroundSource(backGroundArray[props.index]);
       }}>
-      <img src={props.src} alt='404' />
+      <img src={props.src} alt=''/>
       <p className='title'>{props.title}</p>
     </div>
   );

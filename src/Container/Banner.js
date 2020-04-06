@@ -24,7 +24,7 @@ export const Banner = (props) => {
       <img
         src={backgroundSource}
         className='banner-background'
-        alt='bg'
+        alt=''
       />
       <section className='banner-table-container'>
         {imageArray.map((element, index) => {

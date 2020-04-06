@@ -3,7 +3,7 @@
 #motion {
   position: relative;
   height: 600px;
-  border-top: 3px solid rgba(128, 128, 128, 0.100);
+  border-top: 3px solid $light-grey;
   background-color: $background-cream-white;
 }
 
@@ -15,7 +15,6 @@
 
 #motion .container {
   margin: 0;
-//   background-color: cadetblue;
 }
 
 #motion img {
@@ -25,7 +24,6 @@
   height: 90%;
   width: 100%;
   object-fit: cover;
-  z-index: 0;
 }
 
 #motion .view-all-city {

@@ -5,7 +5,7 @@
   max-width: 1200px;
   height: 400px;
   background-color: white;
-  border-top: 3px solid rgba(128, 128, 128, 0.100);
+  border-top: 3px solid $light-grey;
 
 }
 
@@ -23,7 +23,7 @@
   margin-bottom: 0;
   width: 80%;
   object-fit: cover;
-  z-index: 1;
+  z-index: 10;
 }
 
 #commitment article p:nth-child(1) {

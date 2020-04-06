@@ -5,9 +5,8 @@
   position: relative;
   height: 350px;
   max-width: $large-screen;
-  border-top: 3px solid rgba(128, 128, 128, 0.1);
+  border-top: 3px solid $light-grey;
   background-color: #ffffff;
-  // border: 2px solid salmon;
 }
 
 #about-us-block {

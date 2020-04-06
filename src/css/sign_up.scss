@@ -8,8 +8,6 @@
   margin-right: auto;
   padding: 0 10px 0 10px;
   max-width: 1120px;
-
-  // border: 2px solid salmon;
   border-top: 3px solid rgba(128, 128, 128, 0.1);
 }
 
@@ -39,7 +37,7 @@
 }
 
 #sign-up-block h1:hover {
-  color: rgba(128, 128, 128, 0.877);
+  color: $light-grey;
 }
 
 #sign-up-block h1 span {

@@ -6,6 +6,8 @@ $extra-small-screen : 540px;
 
 
 $background-cream-white:#f6f6f6;
+$light-grey: rgba(128, 128, 128, 0.100);
+$light-black: rgba(0, 0, 0, 0.119);
 
 .App{
     position: relative;
@@ -30,7 +32,7 @@ $background-cream-white:#f6f6f6;
 .public_article_underline{
   &::after {
     @extend .articleUnderline;
-    border: .5px solid rgba(0, 0, 0, 0.119);
+    border: .5px solid $light-black;
     transition: 1.3s;
   }
   &:hover {
