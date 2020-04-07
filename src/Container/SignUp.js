@@ -4,11 +4,11 @@ import { SignUpBlock } from "../Components/SignUpBlock";
 
 export const SignUp = (props) => {
   return (
-    <div id='sign-up' className='container'>
+    <section id='sign-up' className='container'>
       <div className='row'>
         <SignUpBlock title='Sign up to drive' />
         <SignUpBlock title='Sign up to ride' />
       </div>
-    </div>
+    </section>
   );
 };

@@ -7,22 +7,22 @@ import position from "../img/footer/position.jpg";
 
 export const HelpCenter = (props) => {
   return (
-    <div id='help'>
+    <section id='help'>
       <div className='container'>
         <div className='row'>
           <section className='col-sm-9 col-md-6 col-lg-6 order-md-1 order-lg-1'>
             <h1>Uber</h1>
-            <ul>
+            <ul className="first-column">
               <li>
-                <img className="small-img" src={question} alt='' />
+                <img src={question} alt='' />
                 Help Center
               </li>
               <li>
-                <img className="small-img" src={english} alt='' />
+                <img src={english} alt='' />
                 English(International)
               </li>
               <li>
-                <img className="small-img" src={position} alt='' />
+                <img src={position} alt='' />
                 Auckland
               </li>
             </ul>
@@ -56,6 +56,6 @@ export const HelpCenter = (props) => {
           </section>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

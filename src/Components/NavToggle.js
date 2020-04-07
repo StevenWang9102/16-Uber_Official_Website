@@ -4,10 +4,12 @@ import earth from "../img/toggle/global.png";
 
 export const NavToggle = (props) => {
   return (
-    <footer id='nav-toggle'>
+    <section id='nav-toggle'>
       <nav>
-        <span>Products</span> <span>Company</span>
+        <span>Products</span>
+        <span>Company</span>
       </nav>
+
       <div className='first-container'>
         <li>
           Ride <img src={arrow} alt='' />
@@ -25,7 +27,9 @@ export const NavToggle = (props) => {
           Freight <img src={arrow} alt='' />
         </li>
       </div>
+
       <hr />
+
       <div className='second-container'>
         <li> Safety</li>
         <li> Help</li>
@@ -33,10 +37,10 @@ export const NavToggle = (props) => {
       </div>
 
       <hr />
-      <div className='third-container'>
-      <li><img src={earth} alt='' />  EN  </li>
-      </div>
 
-    </footer>
+      <div className='third-container'>
+        <img src={earth} alt='' /> EN
+      </div>
+    </section>
   );
 };

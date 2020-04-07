@@ -4,10 +4,9 @@ $medium-screen : 992px;
 $small-screen : 768px;
 $extra-small-screen : 540px;
 
-
-$background-cream-white:#f6f6f6;
 $light-grey: rgba(128, 128, 128, 0.100);
 $light-black: rgba(0, 0, 0, 0.119);
+$background-cream-white:#f6f6f6;
 
 .App{
     position: relative;
@@ -16,11 +15,15 @@ $light-black: rgba(0, 0, 0, 0.119);
     border: 0;
     margin: 0;
     min-width: 300px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
-.App li{
+li{
   list-style-type: none;
+}
+
+.pointer{
+  cursor: pointer;
 }
 
 .articleUnderline{
@@ -32,17 +35,14 @@ $light-black: rgba(0, 0, 0, 0.119);
 .public_article_underline{
   &::after {
     @extend .articleUnderline;
-    border: .5px solid $light-black;
-    transition: 1.3s;
+    border: .7px solid $light-black;
+    transition: 1.7s;
   }
   &:hover {
     &::after {
       @extend .articleUnderline;
-      border: .6px solid rgb(0, 0, 0);
+      border: .7px solid rgb(0, 0, 0);
     }
   }
 }
 
-.pointer{
-  cursor: pointer;
-}

@@ -1,6 +1,6 @@
 @import "./general.scss";
 
-#commitment {
+#safety {
   position: relative;
   max-width: 1200px;
   height: 400px;
@@ -9,15 +9,15 @@
 
 }
 
-#commitment h1 {
+#safety h1 {
   margin: 30px 0 20px 0;
 }
 
-#commitment .row div {
+#safety .row div {
   padding: 30px;
 }
 
-#commitment img {
+#safety img {
   position: absolute;
   bottom: 5px;
   margin-bottom: 0;
@@ -26,13 +26,14 @@
   z-index: 10;
 }
 
-#commitment article p:nth-child(1) {
+#safety article p:nth-child(1) {
   font-size: 16px;
   margin-bottom: 40px;
 }
 
 
-#commitment .paragraph {
+#safety .paragraph {
+  cursor: pointer;
   @extend .public_article_underline;
   &::after {
     width: 306px;
@@ -44,7 +45,7 @@
   }
 }
 
-#commitment article p:nth-child(3) {
+#safety article p:nth-child(3) {
   &::after {
     width: 153px;
   }
@@ -56,10 +57,10 @@
 }
 
 @media only screen and (max-width: $medium-screen) {
-  #commitment {
+  #safety {
     height: 450px;
   }
-  #commitment img {
+  #safety img {
     left: 40px;
     bottom: 35px;
     width: 85%;
@@ -67,11 +68,11 @@
 }
 
 @media only screen and (max-width: $small-screen) {
-  #commitment {
+  #safety {
     height: 580px;
   }
   
-  #commitment .second-column {
+  #safety .second-column {
     position: absolute;
     bottom: 0;
   }

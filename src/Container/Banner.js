@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { BannerBlock } from "../Components/Banner_Block";
-import { Information } from "../Components/Information";
+import { BannerBlock } from "../Components/BannerBlock";
+import { InformationDisplay as Information } from "../Components/InformationDisplay";
 import Earn from "../../src/img/table-banner/01.Earn.svg";
 import Ride from "../../src/img/table-banner/06.Transit.svg";
 import Eat from "../../src/img/table-banner/03.Eat.svg";
@@ -10,38 +10,32 @@ import Business from "../../src/img/table-banner/05.Business.svg";
 import Transit from "../../src/img/table-banner/06.Transit.svg";
 import Bike from "../../src/img/table-banner/07.Bike2.svg";
 import Fly from "../../src/img/table-banner/08.Fly.svg";
-import BackGround from "../../src/img/table-banner/BackGround.png";
-
-import { renderTitle } from "../Redux/bannerData";
+import myBackGround from "../../src/img/table-banner/BackGround.png";
+import { database } from "../Redux/database";
 
 export const Banner = (props) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [backgroundSource, setBackgroundSource] = useState(BackGround);
+  const [background, setBackground] = useState(myBackGround);
   const imageArray = [Earn, Ride, Eat, Freight, Business, Transit, Bike, Fly];
-  
+
   return (
-    <div id='banner'>
-      <img
-        src={backgroundSource}
-        className='banner-background'
-        alt=''
-      />
-      <section className='banner-table-container'>
-        {imageArray.map((element, index) => {
+    <section id='banner'>
+      <img src={background} alt='' />
+      <div className='banner-table-container'>
+        {imageArray.map((src, index) => {
           return (
             <BannerBlock
-              src={element}
+              src={src}
               index={index}
               checked={currentIndex === index ? true : false}
-              setBackgroundSource={(index) => setBackgroundSource(index)}
+              setBackground={(index) => setBackground(index)}
               setCurrentIndex={(index) => setCurrentIndex(index)}
-              title={renderTitle[index]}
+              title={database[index].tagName}
             />
           );
         })}
-      </section>
-
+      </div>
       <Information currentIndex={currentIndex} />
-    </div>
+    </section>
   );
 };

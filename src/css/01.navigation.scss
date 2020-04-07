@@ -39,7 +39,7 @@
   object-fit: cover;
 }
 
-#navigation .login {
+#navigation .login-area {
   position: absolute;
   top: 18px;
   right: 20px;
@@ -48,23 +48,23 @@
   overflow: hidden;
 }
 
-#navigation .login li {
+#navigation .login-area li {
     display: inline;
 }
 
-#navigation .login li:nth-child(2) {
+#navigation .login-area li:nth-child(2) {
   color: black;
   background-color: white;
 }
 
 @media only screen and (max-width: $small-screen) {
-  #navigation .login {
+  #navigation .login-area {
     right: 50px;
   }
 }
 
 @media only screen and (max-width: $extra-small-screen) {
-  #navigation .login {
+  #navigation .login-area {
     right: 50px;
   }
 }

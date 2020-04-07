@@ -1,13 +1,13 @@
 import React from "react";
-import arrow from "../img/sign/arrow.png"
+import arrow from "../img/sign/arrow.png";
 
 export const SignUpBlock = (props) => {
   return (
-    <div id='sign-up-block' className='col-sm-9 col-md-6 col-lg-6'>
-      <h1 className="pointer">
+    <section id='sign-up-block' className='col-sm-9 col-md-6 col-lg-6'>
+      <h1>
         {props.title}
-        <span><img src={arrow} alt=""/></span>
+        <img src={arrow} alt=''/>
       </h1>
-    </div>
+    </section>
   );
 };

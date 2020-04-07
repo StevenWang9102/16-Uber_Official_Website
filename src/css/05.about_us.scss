@@ -17,6 +17,7 @@
 }
 
 #about-us-block .learn-more {
+  cursor: pointer;
   @extend .public_article_underline;
   &::after {
     width: 78px;

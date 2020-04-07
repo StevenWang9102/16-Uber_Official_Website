@@ -29,6 +29,7 @@
 #motion .view-all-city {
   height: 40px;
   margin-left: 20px;
+  cursor: pointer;
   
   @extend .public_article_underline;
   &::after {

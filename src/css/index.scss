@@ -1,12 +1,11 @@
 @import './general.scss';
-@import './navigation.scss';
-@import './banner.scss';
-@import './information.scss';
-@import './motion.scss';
-@import './commitment.scss';
-@import './about_us.scss';
-@import './sign_up.scss';
-@import './help_center.scss';
-@import './footer.scss';
-@import './toggle.scss';
-
+@import './01.navigation.scss';
+@import './01.nav_toggle.scss';
+@import './02.banner.scss';
+@import './02.information.scss';
+@import './03.motion.scss';
+@import './04.safety.scss';
+@import './05.about_us.scss';
+@import './06.sign_up.scss';
+@import './07.help_center.scss';
+@import './08.footer.scss';
