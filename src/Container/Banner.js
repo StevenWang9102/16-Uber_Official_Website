@@ -25,6 +25,7 @@ export const Banner = (props) => {
         {imageArray.map((src, index) => {
           return (
             <BannerBlock
+              key={index}
               src={src}
               index={index}
               checked={currentIndex === index ? true : false}
