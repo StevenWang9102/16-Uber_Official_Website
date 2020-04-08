@@ -1,16 +1,14 @@
 @import "./general.scss";
 
 #footer {
-    position: absolute;
-    color: white;
     position: relative;
     margin-top: -15px;
-    height: 100px;
+    color: white;
     background-color: black;
 }
 
 #footer hr{
-    width: 90%;
+    width: 95%;
     border: .7px solid rgba(161, 161, 161, 0.575);
     z-index:10;
 }
@@ -19,28 +17,20 @@
     cursor: pointer;
 }
 
-#footer .container{
-    padding: 0;
-    margin-left: 5%;
-}
-
 @media only screen and (min-width: $medium-screen) {
+    #footer {
+        height: 60px;
+    }
 }
 
 @media only screen and (max-width: $medium-screen) {
     #footer {
-        height: 200px;
+        height: 170px;
     }
 }
 
 @media only screen and (max-width: $small-screen) {
-    #footer {
-        height: 200px;
-    }
-}
-
-@media only screen and (max-width: $extra-small-screen) {
-    #footer {
-        height: 200px;
+    #footer .container{
+        padding-left: 25px;
     }
 }
