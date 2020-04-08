@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { NavToggle } from "../Components/NavToggle";
-import menu from "../img/icons/menu.jpg";
+import menu from "../img/nav-toggle/menu.jpg";
 
 export const Navigation = (props) => {
   const [toggleClicked, setToggleClicke] = useState(1);

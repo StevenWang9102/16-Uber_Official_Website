@@ -2,15 +2,15 @@ import React from "react";
 import { useState } from "react";
 import { BannerBlock } from "../Components/BannerBlock";
 import { InformationDisplay as Information } from "../Components/InformationDisplay";
-import Earn from "../../src/img/table-banner/01.Earn.svg";
-import Ride from "../../src/img/table-banner/06.Transit.svg";
-import Eat from "../../src/img/table-banner/03.Eat.svg";
-import Freight from "../../src/img/table-banner/04.Freight.svg";
-import Business from "../../src/img/table-banner/05.Business.svg";
-import Transit from "../../src/img/table-banner/06.Transit.svg";
-import Bike from "../../src/img/table-banner/07.Bike2.svg";
-import Fly from "../../src/img/table-banner/08.Fly.svg";
-import myBackGround from "../../src/img/table-banner/BackGround.png";
+import Earn from "../../src/img/banner/01.Earn.svg";
+import Ride from "../../src/img/banner/06.Transit.svg";
+import Eat from "../../src/img/banner/03.Eat.svg";
+import Freight from "../../src/img/banner/04.Freight.svg";
+import Business from "../../src/img/banner/05.Business.svg";
+import Transit from "../../src/img/banner/06.Transit.svg";
+import Bike from "../../src/img/banner/07.Bike2.svg";
+import Fly from "../../src/img/banner/08.Fly.svg";
+import myBackGround from "../../src/img/banner/BackGround.png";
 import { database } from "../Redux/database";
 
 export const Banner = (props) => {

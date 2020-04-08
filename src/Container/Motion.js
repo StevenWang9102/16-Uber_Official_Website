@@ -1,5 +1,5 @@
 import React from "react";
-import modalities from "../img/modalities2.png";
+import modalities from "../img/motion/modalities2.png";
 
 
 export const Motion = props => {

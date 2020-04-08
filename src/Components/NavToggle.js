@@ -1,6 +1,6 @@
 import React from "react";
-import arrow from "../img/toggle/down-arrow.png";
-import earth from "../img/toggle/global.png";
+import arrow from "../img/nav-toggle/down-arrow.png";
+import earth from "../img/nav-toggle/global.png";
 
 export const NavToggle = (props) => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import screen from "../img/safety-screen.png";
+import screen from "../img/safety/safety-screen.png";
 
 export const Safety = props => {
   return (
