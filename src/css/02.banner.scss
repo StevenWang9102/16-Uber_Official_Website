@@ -1,38 +1,41 @@
 @import './general.scss';
 
 #banner{
+    position: relative;
+    top: 0;
     height: 700px;
     background-color: white;
 }
 
 #banner-block{
-    margin: 5px;
+    margin: 0 5px;
     &:hover{
         cursor: pointer;
     }
-}
-#banner img{
-    height: 100%;
+}    
+
+#banner .banner-table-container{
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    overflow: hidden;
     width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 960px;
+    transform: translate(-50%);
+    border: 2px solid white;
+    border-bottom: 2px solid $light-grey;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+}
+
+#banner img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     z-index: -10;
 }
-
-.banner-table-container{
-    overflow: hidden;
-    display: flex;
-    flex-wrap: nowrap;
-    position: absolute;
-    max-width: 960px;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    border: 2px solid white;
-    border-bottom: 2px solid $light-grey;
-    z-index: 2;
-    background-color: rgb(255, 255, 255);
-}
-
 
 #banner .banner_unit{
     width: 120px;
@@ -46,7 +49,7 @@
 #banner .banner_unit_pro{
     width: 120px;
     z-index: 20;
-    border-bottom: 5px solid rgb(0, 0, 0);
+    border-bottom: 5px solid black;
 }
 
 #banner .banner_unit .title, #banner .banner_unit_pro .title{
@@ -68,22 +71,18 @@
 }
 
 @media only screen and (min-width: $medium-screen) {
-    .banner-table-container{
-        
+    #banner .banner-table-container{
         position: absolute;
-        top: 110px;
-        left: 10%;
-        width: 80%;
+        top: 60px;
+        width: 920px;
     }
 }
 
 @media only screen and (max-width: $medium-screen) {
-    .banner-table-container{
-        width: 100%;
-        height: 130px;
+    #banner .banner-table-container{
         position: absolute;
-        top: 60px;
-        left: 0;
+        top: 0;
+        height: 130px;
     }
     
     .banner_unit img, .banner_unit_pro img{
@@ -96,7 +95,7 @@
         height: 600px;
     }
 
-    .banner-table-container{
+    #banner .banner-table-container{
         height: 130px;
     }
 
@@ -108,10 +107,4 @@
         width:20px;
         height:100px;
     }   
-  }
-
-  @media only screen and (max-width: $extra-small-screen ) {
-    #banner .banner_unit, #banner .banner_unit_pro{
-        min-width: 90px;
-    }    
   }

@@ -11,81 +11,68 @@
   border-top: 3px solid rgba(128, 128, 128, 0.1);
 }
 
+
+.sign_up_after{
+  @extend .articleUnderline;
+  padding: 10px 0;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  width: 100%;
+}
+
 #sign-up-block h1 {
-  font-size: 32px;
   position: relative;
   top: 40px;
+  font-size: 32px;
   width: 380px;
   margin: 20px;
   min-width: 300px;
   cursor: pointer;
-  // border: 2px solid green;
-
+  
   &::after {
-    @extend .articleUnderline;
-    padding: 10px 0;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    width: 100%;
+    @extend .sign_up_after;
   }
-  &:hover {
-    &::after {
-      @extend .articleUnderline;
-      padding: 10px 0;
-      border-bottom: 1px solid rgb(0, 0, 0);
-      width: 100%;
-    }
-  }
-}
 
-#sign-up-block h1:hover {
-  color: grey;
+  &:hover {
+    color: grey;
+  }
 }
 
 #sign-up-block img {
-  width: auto;
   float: right;
+  width: auto;
   height: 50px;
-  margin-bottom: 10px;
   padding: 10px 0px 10px 40px;
+  margin-bottom: 10px;
   z-index: 10;
-  // border: 2px solid rebeccapurple;
-}
 
-
-#sign-up-block img:hover{
-  transition: .4s;
-  transform: translate(15px);
-}
-
-@media (min-width: 768px) {
-  #sign-up {
-    max-width: 1120px;
+  &:hover {
+    transition: 0.4s;
+    transform: translate(15px);
   }
 }
 
-@media only screen and (max-width: 750px) {
-  
+@media (min-width: $small-screen) {
   #sign-up {
-    margin-left: 30px auto;
-    max-width: 1000px;
+    max-width: 1200px;
+  }
+
+  #sign-up-block h1{
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: $small-screen) {
+  #sign-up {
     height: 320px;
+    margin-left: 30px auto;
   }
 
   #sign-up-block {
     flex: 0 0 100%;
     max-width: 100%;
-    // border: 2px solid salmon;
   }
-  #sign-up-block h1{
-    width: 90%;
-    // border: 2px solid salmon;
-  }
-}
 
-@media only screen and (max-width: $small-screen) {
-  // #sign-up {
-  //   margin-left: 30px auto;
-  //   max-width: 1000px;
-  //   height: 320px;
-  // }
+  #sign-up-block h1 {
+    width: 90%;
+  }
 }

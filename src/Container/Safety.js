@@ -13,10 +13,10 @@ export const Safety = props => {
                 Community Guidelines we uphold, we're committed to working to
                 create a safe environment for our users.
               </p>
-              <p className='paragraph'>
+              <p>
                 Learn more about our Community Guidelines
               </p>
-              <p className='paragraph'>See all safety features</p>
+              <p>See all safety features</p>
               </article>
           </div>
 

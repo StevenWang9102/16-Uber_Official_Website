@@ -20,9 +20,9 @@
 #motion img {
   position: absolute;
   bottom: 0;
-  margin-bottom: 0;
   height: 90%;
   width: 100%;
+  margin-bottom: 0;
   object-fit: cover;
 }
 
@@ -30,7 +30,7 @@
   height: 40px;
   margin-left: 20px;
   cursor: pointer;
-  
+
   @extend .public_article_underline;
   &::after {
     width: 92px;
@@ -42,43 +42,39 @@
   }
 }
 
-
 @media only screen and (min-width: $medium-screen) {
   #motion img {
-    height: auto;
     width: 100%;
+    height: auto;
   }
 }
 
 @media only screen and (max-width: $medium-screen) {
-  
-#motion {
-  position: relative;
-  height: 520px;
-  // background-color: #f6f6f6;
-}
+  #motion {
+    position: relative;
+    height: 520px;
+  }
   #motion h1 {
     font-size: 45px;
-  }  
-    #motion img {
-        height: 85%;
-        width: 100%;
-        // border: 1px solid saddlebrown;
-      }
+  }
+  #motion img {
+    height: 85%;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: $small-screen) {
   #motion {
     position: relative;
     height: 420px;
-    // background-color: #f6f6f6;
   }
+
   #motion h1 {
     font-size: 40px;
-  }  
+  }
+
   #motion img {
     height: 65%;
     width: 100%;
-    // border: 1px solid saddlebrown;
   }
 }
