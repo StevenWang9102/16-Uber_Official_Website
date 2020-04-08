@@ -49,9 +49,9 @@
 
   &:hover {
     animation-name: arrow-move;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: backwards;
+    animation-duration: .5s;
+    animation-iteration-count: 2;
+    // animation-fill-mode: backwards;
   }
 }
 
