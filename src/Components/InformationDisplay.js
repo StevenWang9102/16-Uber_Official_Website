@@ -1,5 +1,5 @@
 import React from "react";
-import { database } from "../Redux/database";
+import { database } from "../database";
 import message from "../../src/img/information/message.png";
 
 export const InformationDisplay = (props) => {

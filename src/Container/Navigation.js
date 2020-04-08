@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { NavToggle } from "../Components/NavToggle";
 import menu from "../img/nav-toggle/menu.jpg";
+import back from "../img/nav-toggle/delete.png";
 
 export const Navigation = (props) => {
   const [toggleClicked, setToggleClicke] = useState(1);
@@ -24,7 +25,7 @@ export const Navigation = (props) => {
           aria-expanded='false'
           aria-label='Toggle navigation'>
           <span>
-            <img src={menu} alt='' />
+            <img src={toggleClicked % 2 === 0 ? back : menu} alt='' />
           </span>
         </button>
 
@@ -42,8 +43,7 @@ export const Navigation = (props) => {
         </ul>
       </nav>
 
-      {toggleClicked % 2 === 0 ? <NavToggle/> : null}
-      
+      {toggleClicked % 2 === 0 ? <NavToggle /> : null}
     </section>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import arrow from "../img/sign/arrow.png";
+import arrow from "../img/sign/arrow-right.png";
 
 export const SignUpBlock = (props) => {
   return (

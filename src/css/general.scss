@@ -25,21 +25,27 @@ li{
   cursor: pointer;
 }
 
-.articleUnderline{
+.article_underline{
+  content: "";
+  display: block;
+  margin: 5px 0;
+}
+
+@mixin public_underline($width, $margin) {
+  &::after {
     content: "";
     display: block;
-    margin: 5px 0;
-  }
-
-.public_article_underline{
-  &::after {
-    @extend .articleUnderline;
+    width: $width;
+    margin: $margin 0;
     border: .7px solid $light-black;
     transition: 1.7s;
   }
   &:hover {
     &::after {
-      @extend .articleUnderline;
+      content: "";
+      display: block;
+      width: $width;
+      margin: $margin 0;
       border: .5px solid rgb(0, 0, 0);
     }
   }

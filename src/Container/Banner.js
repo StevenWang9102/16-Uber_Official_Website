@@ -11,7 +11,7 @@ import Transit from "../../src/img/banner/06.Transit.svg";
 import Bike from "../../src/img/banner/07.Bike2.svg";
 import Fly from "../../src/img/banner/08.Fly.svg";
 import myBackGround from "../../src/img/banner/BackGround.png";
-import { database } from "../Redux/database";
+import { database } from "../database";
 
 export const Banner = (props) => {
   const [currentIndex, setCurrentIndex] = useState(0);

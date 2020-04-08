@@ -1,5 +1,3 @@
-@import "./general.scss";
-
 #motion {
   position: relative;
   height: 600px;
@@ -30,16 +28,7 @@
   height: 40px;
   margin-left: 20px;
   cursor: pointer;
-
-  @extend .public_article_underline;
-  &::after {
-    width: 92px;
-  }
-  &:hover {
-    &::after {
-      width: 92px;
-    }
-  }
+  @include public_underline(92px, 5px);
 }
 
 @media only screen and (min-width: $medium-screen) {

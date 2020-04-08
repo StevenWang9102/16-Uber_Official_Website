@@ -65,38 +65,21 @@
   height: 40px;
   margin-top: 12px;
   line-height: 150%;
-  
-  @extend .public_article_underline;
-  &::after {
-    margin: 1px 0;
-    width: 272px;
-  }
-  &:hover {
-    &::after {
-      width: 272px;
-    }
-  }
+  @include public_underline(272px, 5px);
 }
 
 #information .learn-more-pro {
   width: 286px;
   height: 40px;
   margin-top: 10px;
-  border-bottom: 1px solid $light-grey;
-  &:hover {
-    border-bottom: 1px solid rgb(0, 0, 0);
-  }
+  @include public_underline(284px, -5px)
 }
 
 .sign-to-carrier {
   width: 152px;
   height: 40px;
   margin-top: 10px;
-  border-bottom: 1px solid $light-grey;
-
-  &:hover {
-    border-bottom: 1px solid rgb(0, 0, 0);
-  }
+  @include public_underline(151px, -5px)
 }
 
 @media only screen and (min-width: $medium-screen) {
