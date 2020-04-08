@@ -40,7 +40,7 @@ li{
   &:hover {
     &::after {
       @extend .articleUnderline;
-      border: .7px solid rgb(0, 0, 0);
+      border: .5px solid rgb(0, 0, 0);
     }
   }
 }
